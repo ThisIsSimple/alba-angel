@@ -6,8 +6,8 @@ import _ from "lodash";
 import { Offline } from "react-detect-offline";
 
 function App() {
-  // const BASE_URL = "http://141.164.38.143";
-  const BASE_URL = "http://localhost:9000";
+  const BASE_URL = "http://141.164.38.143";
+  // const BASE_URL = "http://localhost:9000";
 
   const [categoryId, setCategoryId] = useState("");
   const [startPage, setStartPage] = useState(1);
