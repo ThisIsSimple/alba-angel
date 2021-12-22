@@ -30,7 +30,8 @@ function App() {
   const [query, setQuery] = useState("");
   const [showClearQuery, setShowClearQuery] = useState(false);
 
-  const requestBrands = () => {
+  const requestBrands = (e) => {
+    e.preventDefault();
     if (categoryId === "") {
       alert("카테고리를 입력해주세요");
       return;
@@ -55,7 +56,8 @@ function App() {
       });
   };
 
-  const requestProducts = () => {
+  const requestProducts = (e) => {
+    e.preventDefault();
     setLoading(true);
     setButtonLoading(true);
     setLoadingText(
@@ -294,20 +296,22 @@ function App() {
                 <h2 className="font-bold">카테고리 입력</h2>
               </header>
               <div className="flex items-center mb-2">
-                <input
-                  type="text"
-                  className="px-3 py-1 border rounded-md mr-3"
-                  value={categoryId}
-                  onChange={(e) => setCategoryId(e.currentTarget.value)}
-                  placeholder="카테고리 ID 입력"
-                />
-                <button
-                  className="bg-violet-600 text-white rounded-md px-3 py-0.5 mr-3"
-                  onClick={requestBrands}
-                  disabled={buttonLoading}
-                >
-                  브랜드 정보 요청
-                </button>
+                <form onSubmit={requestBrands}>
+                  <input
+                    type="text"
+                    className="px-3 py-1 border rounded-md mr-3"
+                    value={categoryId}
+                    onChange={(e) => setCategoryId(e.currentTarget.value)}
+                    placeholder="카테고리 ID 입력"
+                  />
+                  <button
+                    type="submit"
+                    className="bg-violet-600 text-white rounded-md px-3 py-0.5 mr-3"
+                    disabled={buttonLoading}
+                  >
+                    브랜드 정보 요청
+                  </button>
+                </form>
               </div>
             </div>
             {step >= 2 && (
@@ -316,27 +320,29 @@ function App() {
                   <h2 className="font-bold">페이지 입력</h2>
                 </header>
                 <div className="flex items-center mb-3">
-                  <input
-                    className="px-3 py-1 border rounded-md mr-3 w-24"
-                    type="number"
-                    min={1}
-                    value={startPage}
-                    onChange={(e) => setStartPage(e.currentTarget.value)}
-                  />
-                  <input
-                    className="px-3 py-1 border rounded-md mr-3 w-24"
-                    type="number"
-                    min={1}
-                    value={endPage}
-                    onChange={(e) => setEndPage(e.currentTarget.value)}
-                  />
-                  <button
-                    className="bg-violet-600 text-white rounded-md px-3 py-0.5 mr-3"
-                    onClick={requestProducts}
-                    disabled={buttonLoading}
-                  >
-                    상품 조회
-                  </button>
+                  <form onSubmit={requestProducts}>
+                    <input
+                      className="px-3 py-1 border rounded-md mr-3 w-24"
+                      type="number"
+                      min={1}
+                      value={startPage}
+                      onChange={(e) => setStartPage(e.currentTarget.value)}
+                    />
+                    <input
+                      className="px-3 py-1 border rounded-md mr-3 w-24"
+                      type="number"
+                      min={1}
+                      value={endPage}
+                      onChange={(e) => setEndPage(e.currentTarget.value)}
+                    />
+                    <button
+                      type="submit"
+                      className="bg-violet-600 text-white rounded-md px-3 py-0.5 mr-3"
+                      disabled={buttonLoading}
+                    >
+                      상품 조회
+                    </button>
+                  </form>
                 </div>
                 <div className="flex flex-wrap">
                   <button
