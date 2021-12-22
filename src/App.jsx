@@ -9,8 +9,8 @@ import { productStore } from "./stores/product";
 import { toJS } from "mobx";
 
 function App() {
-  // const BASE_URL = "https://smartstore.cordelia273.space";
-  const BASE_URL = "http://localhost:9000";
+  const BASE_URL = "https://smartstore.cordelia273.space";
+  // const BASE_URL = "http://localhost:9000";
 
   const [showForm, setShowForm] = useState(false);
   const [categoryId, setCategoryId] = useState("");
@@ -274,9 +274,9 @@ function App() {
             </div>
             <div>
               {showForm ? (
-                <i aria-hidden class="fas fa-chevron-up" />
+                <i aria-hidden className="fas fa-chevron-up" />
               ) : (
-                <i aria-hidden class="fas fa-chevron-down" />
+                <i aria-hidden className="fas fa-chevron-down" />
               )}
             </div>
           </div>
@@ -521,7 +521,7 @@ function App() {
                           <span className="mr-3">{name}</span>
                           <i
                             aria-hidden
-                            class="fas text-gray-600 fa-external-link-alt"
+                            className="fas text-gray-600 fa-external-link-alt"
                           />
                         </a>
                       </h3>
@@ -588,7 +588,7 @@ function App() {
                     onMouseEnter={() => setShowClearQuery(true)}
                     onMouseLeave={() => setShowClearQuery(false)}
                   >
-                    <i aria-hidden class="far fa-times-circle" />
+                    <i aria-hidden className="far fa-times-circle" />
                   </div>
                 )}
               </div>
