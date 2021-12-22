@@ -560,7 +560,7 @@ function App() {
       <div className="h-20" />
       <footer className="fixed bottom-0 left-0 w-screen p-3 bg-white shadow border-t border-gray-400">
         <div className="flex justify-between items-center flex-wrap">
-          <div className="flex items-center mb-2 lg:mb-0">
+          <div className="flex flex-wrap items-center my-1">
             <form onSubmit={searchProducts} className="flex items-center mr-3">
               <div className="relative">
                 <input
@@ -619,12 +619,26 @@ function App() {
                 >
                   전체 해제
                 </button>
+                <button
+                  className="bg-gray-300 text-gray-800 rounded text-sm px-2 py-0.5 mr-2"
+                  onClick={() => {
+                    productStore.products = productStore.filteredProducts;
+                    productStore.searchedProducts = _.reject(
+                      productStore.searchedProducts,
+                      (item) =>
+                        !_.find(productStore.filteredProducts, { id: item.id })
+                    );
+                  }}
+                  disabled={buttonLoading}
+                >
+                  선택 안된 상품 제거
+                </button>
               </>
             )}
             {step === 4 && (
               <>
                 <button
-                  className="bg-pink-500 text-white text-sm rounded-md px-2 py-0.5"
+                  className="bg-pink-500 text-white text-sm rounded px-2 py-0.5"
                   onClick={filterZeroPurchase}
                   disabled={buttonLoading}
                 >
@@ -633,21 +647,7 @@ function App() {
               </>
             )}
           </div>
-          <div className="flex items-center">
-            <button
-              className="bg-gray-300 text-gray-800 rounded-md px-2 py-0.5 mr-3"
-              onClick={() => {
-                productStore.products = productStore.filteredProducts;
-                productStore.searchedProducts = _.reject(
-                  productStore.searchedProducts,
-                  (item) =>
-                    !_.find(productStore.filteredProducts, { id: item.id })
-                );
-              }}
-              disabled={buttonLoading}
-            >
-              선택 안된 상품 제거
-            </button>
+          <div className="flex items-center my-1">
             {step >= 3 && (
               <button
                 className="bg-violet-600 text-white rounded-md px-2 py-0.5 mr-3"
