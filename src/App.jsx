@@ -557,10 +557,10 @@ function App() {
           )}
         </section>
       </div>
-      <div className="h-16" />
+      <div className="h-20" />
       <footer className="fixed bottom-0 left-0 w-screen p-3 bg-white shadow border-t border-gray-400">
         <div className="flex justify-between items-center flex-wrap">
-          <div className="flex items-center">
+          <div className="flex items-center mb-2 lg:mb-0">
             <form onSubmit={searchProducts} className="flex items-center mr-3">
               <div className="relative">
                 <input
