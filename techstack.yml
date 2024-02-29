@@ -1,0 +1,309 @@
+repo_name: ThisIsSimple/alba-angel
+report_id: 968ef1ba88bd565f208f9b77625fb2ce
+version: 0.1
+repo_type: Public
+timestamp: '2024-02-29T18:57:29+00:00'
+requested_by: ThisIsSimple
+provider: github
+branch: main
+detected_tools_count: 22
+tools:
+- name: CSS 3
+  description: The latest evolution of the Cascading Style Sheets language
+  website_url: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source_url: https://github.com/ThisIsSimple/alba-angel
+  detection_source: Repo Metadata
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/ThisIsSimple/alba-angel
+  detection_source: Repo Metadata
+- name: Autoprefixer
+  description: PostCSS plugin to parse CSS and add vendor prefixes to CSS rules
+  website_url: https://github.com/postcss/autoprefixer
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: CSS Pre-processors / Extensions
+  image_url: https://img.stackshare.io/service/2202/72d087642cfce6fef6f2dabec5bf49e8_400x400.png
+  detection_source_url: https://github.com/ThisIsSimple/alba-angel/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: 전윤민
+  last_updated_on: 2021-12-22 09:28:26.000000000 Z
+- name: MobX
+  description: Simple, scalable state management
+  website_url: https://github.com/mobxjs/mobx
+  version: 6.3.9
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: State Management Library
+  image_url: https://img.stackshare.io/service/5302/17475736.png
+  detection_source_url: https://github.com/ThisIsSimple/alba-angel/blob/main/yarn.lock
+  detection_source: package.json
+  last_updated_by: 전윤민
+  last_updated_on: 2021-12-19 18:50:32.000000000 Z
+- name: React
+  description: A JavaScript library for building user interfaces
+  website_url: https://reactjs.org/
+  version: 17.0.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript UI Libraries
+  image_url: https://img.stackshare.io/service/1020/OYIaJ1KK.png
+  detection_source_url: https://github.com/ThisIsSimple/alba-angel/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: 전윤민
+  last_updated_on: 2021-12-22 21:21:00.000000000 Z
+- name: Tailwind CSS
+  description: A utility-first CSS framework for rapid UI development
+  website_url: https://tailwindcss.com
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Front-End Frameworks
+  image_url: https://img.stackshare.io/service/8158/default_660b7c41c3ba489cb581eec89c04655404258c19.png
+  detection_source_url: https://github.com/ThisIsSimple/alba-angel/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: 전윤민
+  last_updated_on: 2021-12-22 09:28:26.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/ThisIsSimple/alba-angel
+  detection_source: Repo Metadata
+- name: GitHub Actions
+  description: Automate your workflow from idea to production
+  website_url: https://github.com/features/actions
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Continuous Integration
+  image_url: https://img.stackshare.io/service/11563/actions.png
+  detection_source_url: https://github.com/ThisIsSimple/alba-angel/blob/main/.github/workflows/firebase-hosting-merge.yml
+  detection_source: ".github/workflows/firebase-hosting-merge.yml"
+  last_updated_by: 전윤민
+  last_updated_on: 2021-12-22 09:43:10.000000000 Z
+- name: Yarn
+  description: A new package manager for JavaScript
+  website_url: https://yarnpkg.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/5848/44mC-kJ3.jpg
+  detection_source_url: https://github.com/ThisIsSimple/alba-angel/blob/main/yarn.lock
+  detection_source: yarn.lock
+  last_updated_by: 전윤민
+  last_updated_on: 2021-12-22 09:28:26.000000000 Z
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/ThisIsSimple/alba-angel/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: 전윤민
+  last_updated_on: 2021-12-19 18:50:32.000000000 Z
+- name: HTML
+  description: Hypertext Markup Language for creating web pages.
+  website_url: http://
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/2270/no-img-open-source.png
+  detection_source_url: https://github.com/ThisIsSimple/alba-angel/blob/main/public/index.html
+  detection_source: public/index.html
+  last_updated_by: 전윤민
+  last_updated_on: 2021-12-19 18:50:32.000000000 Z
+- name: Lodash
+  description: A JavaScript utility library
+  website_url: https://lodash.com
+  version: 4.17.21
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript Utilities & Libraries
+  image_url: https://img.stackshare.io/service/2438/lodash.png
+  detection_source_url: https://github.com/ThisIsSimple/alba-angel/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: 전윤민
+  last_updated_on: 2021-12-22 09:28:26.000000000 Z
+- name: axios
+  description: Promise based HTTP client for the browser and node.js
+  website_url: https://github.com/mzabriskie/axios
+  version: 0.21.4
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript Utilities & Libraries
+  image_url: https://img.stackshare.io/no-img-open-source.png
+  detection_source_url: https://github.com/ThisIsSimple/alba-angel/blob/main/yarn.lock
+  detection_source: package.json
+  last_updated_by: 전윤민
+  last_updated_on: 2021-12-22 09:28:26.000000000 Z
+- name: "@testing-library/jest-dom"
+  description: Custom jest matchers to test the state of the DOM
+  package_url: https://www.npmjs.com/@testing-library/jest-dom
+  version: 5.16.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17424/default_1cdcda15ebb7caed879f8340bc212b44c4ec9dac.png
+  detection_source_url: https://github.com/ThisIsSimple/alba-angel/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: 전윤민
+  last_updated_on: 2021-12-22 09:28:26.000000000 Z
+- name: "@testing-library/react"
+  description: Simple and complete React DOM testing utilities that encourage good
+    testing practices
+  package_url: https://www.npmjs.com/@testing-library/react
+  version: 12.1.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16549/default_d522554c6a41cb28d922d6d3ad32ad4afa0e3bb5.png
+  detection_source_url: https://github.com/ThisIsSimple/alba-angel/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: 전윤민
+  last_updated_on: 2021-12-22 21:21:00.000000000 Z
+- name: mobx-react
+  description: React bindings for MobX. Create fully reactive components
+  package_url: https://www.npmjs.com/mobx-react
+  version: 7.2.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16661/default_e3c0987b80983280e46e6e1723fcfcff50fa4824.png
+  detection_source_url: https://github.com/ThisIsSimple/alba-angel/blob/main/yarn.lock
+  detection_source: package.json
+  last_updated_by: 전윤민
+  last_updated_on: 2021-12-22 21:21:00.000000000 Z
+- name: postcss
+  description: Tool for transforming styles with JS plugins
+  package_url: https://www.npmjs.com/postcss
+  version: 7.0.39
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16012/default_7a88bebb451873cc63bd99007de5bd3bb8ef85de.png
+  detection_source_url: https://github.com/ThisIsSimple/alba-angel/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: 전윤민
+  last_updated_on: 2021-12-22 09:28:26.000000000 Z
+  vulnerabilities:
+  - name: PostCSS line return parsing error
+    cve_id: CVE-2023-44270
+    cve_url: https://github.com/advisories/GHSA-7fh5-64p2-3v2j
+    detected_date: Oct 4
+    severity: moderate
+    first_patched: 8.4.31
+- name: react-dom
+  description: React package for working with the DOM
+  package_url: https://www.npmjs.com/react-dom
+  version: 17.0.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15808/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
+  detection_source_url: https://github.com/ThisIsSimple/alba-angel/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: 전윤민
+  last_updated_on: 2021-12-22 21:21:00.000000000 Z
+- name: react-scripts
+  description: Configuration and scripts for Create React App
+  package_url: https://www.npmjs.com/react-scripts
+  version: 5.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15985/default_8b5680d4e916298d08363c291a0d6e34c07ceb15.png
+  detection_source_url: https://github.com/ThisIsSimple/alba-angel/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: 전윤민
+  last_updated_on: 2021-12-22 21:21:00.000000000 Z
+- name: tailwindcss
+  description: A utility-first CSS framework for rapidly building custom user interfaces
+  package_url: https://www.npmjs.com/tailwindcss
+  version: 3.0.7
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17398/default_2cd7ed1c123f2fca074a6f4b16c4e73d5bfe82be.png
+  detection_source_url: https://github.com/ThisIsSimple/alba-angel/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: 전윤민
+  last_updated_on: 2021-12-22 09:28:26.000000000 Z
+- name: wait-on
+  description: Wait-on is a cross platform command line utility and Node.js API which
+    will wait for files
+  package_url: https://www.npmjs.com/wait-on
+  version: 6.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17821/default_a53af9d6b5a4c8c6e8d5f8494d76a8d2efd3e660.png
+  detection_source_url: https://github.com/ThisIsSimple/alba-angel/blob/main/yarn.lock
+  detection_source: package.json
+  last_updated_by: 전윤민
+  last_updated_on: 2021-12-22 09:28:26.000000000 Z
+- name: xlsx
+  description: SheetJS Spreadsheet data parser and writer
+  package_url: https://www.npmjs.com/xlsx
+  version: 0.17.4
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16781/default_c6eddffbed005d007ab4638fbcac90e4b79576b2.png
+  detection_source_url: https://github.com/ThisIsSimple/alba-angel/blob/main/yarn.lock
+  detection_source: package.json
+  last_updated_by: 전윤민
+  last_updated_on: 2021-12-22 09:28:26.000000000 Z
+  vulnerabilities:
+  - name: Prototype Pollution in sheetJS
+    cve_id: CVE-2023-30533
+    cve_url: https://github.com/advisories/GHSA-4r6h-8v6p-xvw6
+    detected_date: Apr 25
+    severity: high
+    first_patched: 0.19.3
